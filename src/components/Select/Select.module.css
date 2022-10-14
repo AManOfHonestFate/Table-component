@@ -1,0 +1,7 @@
+.select {
+    background-color: gray;
+    color: white;
+    border-radius: 0.5em;
+    margin-right: 1em;
+    text-transform: capitalize;
+}

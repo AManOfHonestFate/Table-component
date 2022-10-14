@@ -1,0 +1,15 @@
+.button {
+    --c: #b127b3;  /*button color*/
+    background-color: transparent;
+    border: 1px solid var(--c);
+    border-radius: 0.4em;
+    padding: 0.3em 0.5em;
+    color: var(--c);
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.button:hover {
+    background-color: var(--c);
+    color: white;
+}

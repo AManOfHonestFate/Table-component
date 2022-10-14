@@ -1,0 +1,49 @@
+.row {
+    --green: 0, 255, 0;
+    --yellow: 255, 255, 0;
+    --red: 255, 0, 0;
+    --opacity: 0.1;
+    position: relative;
+}
+.row:hover {
+    --opacity: 0.3;
+}
+.green {
+    background-color: rgba(var(--green), var(--opacity));
+}
+.yellow {
+    background-color: rgba(var(--yellow), var(--opacity));
+}
+.red {
+    background-color: rgba(var(--red), var(--opacity));
+}
+
+.row td {
+    padding: 1em;
+}
+.row td:first-child {
+    padding-left: 2em;
+}
+.row td:last-child {
+    padding: 0 1em 0 3em;
+}
+.row td:first-child::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0.5em;
+    top: 1.25em;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+
+.green td:first-child::before {
+    background-color: rgb(var(--green));
+}
+.yellow td:first-child::before {
+    background-color: rgb(var(--yellow));
+}
+.red td:first-child::before {
+    background-color: rgb(var(--red));
+}
