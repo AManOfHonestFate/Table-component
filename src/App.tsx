@@ -33,9 +33,10 @@ function App() {
             // sort for numbers
             if (typeof a === 'number' && typeof b === 'number') {
                 res = a - b;
+            } else {
+                // sort for strings
+                res = a.toString().toLowerCase().localeCompare(b.toString().toLowerCase());
             }
-            // sort for string
-            res = a.toString().toLowerCase().localeCompare(b.toString().toLowerCase())
             // return negative if minus
             return minus ? -res : res;
         })
